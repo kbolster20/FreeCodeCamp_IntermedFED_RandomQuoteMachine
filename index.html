@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Random Quote Machine</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <!-- my custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- so I can use font-awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" -->
+
+    <!-- google font I'm using for quotes -->
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+    <div class="container h-100" id="mainContainer">
+        <div class="row h-75">
+            <div class="col-sm-12 my-auto h-50">
+
+                <div class="card w-75 h-100 mx-auto">
+                    <div class="card card-body h-100">
+                        <p class="card-text mx-4 mt-4" id="quote"></p>
+                        <p>
+                            <i id="author" class="mx-4"></i>
+                        </p>
+                    </div>
+                    <div class="card-footer text-right">
+                        <a target="_blank" href="#" class="btn btn-social btn-twitter link-in-popup" id="twitterLink">
+                            <i class="fa fa-twitter"></i> Share on Twitter
+                        </a>
+                        <!--<button class="btn btn-primary mb-0 submit" id="postToTwitter" onclick="changeQuote()" aria-expanded="Get a New Random Quote">Post To Twitter</button>-->
+                        <button class="btn btn-primary mb-0 submit" id="getQuoteBtn" onclick="changeQuote()" aria-expanded="Get a New Random Quote">Get a New Quote</button>
+                    </div>
+
+                </div>
+
+
+
+
+                <!-- <div class="card card-block w-50 h-100 mx-auto">
+                    <p id="quote"></p>
+                    <i id="author"></i>
+                    <div class="card-footer text-muted">
+                        <button class="btn btn-primary mb-0 submit" id="getQuoteBtn" onclick="changeQuote()" aria-expanded="Get a New Random Quote">Get a New Quote</button>
+                        <button class="btn btn-primary mb-0 submit" id="postToTwitter" onclick="changeQuote()" aria-expanded="Get a New Random Quote">Post To Twitter</button>
+                    </div>
+
+                </div>-->
+                <!-- class card -->
+            </div>
+        </div>
+
+    </div>
+    <!-- bg-info -->
+
+    <!-- container -->
+
+
+
+    <!-- Scripts -->
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <!-- Moustache so I can use templates -->
+
+    <!-- My custom script -->
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+
+</html>

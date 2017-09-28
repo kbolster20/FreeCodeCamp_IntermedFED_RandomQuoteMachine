@@ -1,0 +1,19 @@
+html,
+body {
+    height: 100%;
+    font-family: 'Lora', serif;
+}
+
+#quote {
+    font-size: large;
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+#author {
+    font-size: medium;
+    /* % of view window so it is responsive! still
+    have old stuff above for legacy browsers */
+    font-size: 1vw;
+    font-weight: bold;
+}
